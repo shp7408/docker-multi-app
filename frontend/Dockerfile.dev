@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package.json ./
 
 # package.json 에 명시된 종속성을 설치합니다.
-RUN npm instsall
+RUN npm install
 
 # 로컬에 있는 모든 소스 코드를 WORKDIR로 복사합니다.
 COPY ./ ./
